@@ -1,41 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-class Hao extends React.Component {
+var Name = "HuynhQuanNhatHao";
+var str = [1, 2, 3, 4, 5];
+var items = str.map((x) => (x*2) + ", ");
+
+function nMap(props) {
+  return(
+   <div>
+     <h1>Hello</h1>
+   </div>
+  )
+}
+
+class App extends Component {
   render() {
     return (
       <div>
-        <h1>Hello</h1>
+        <nMap/>
       </div>
     );
   }
-}
-
-
-function Test(pros) {
-  return (
-    <div>
-      <h1>{pros.title}</h1>
-      <img src = {pros.links} alt = "Nodata"/>
-    </div>
-  );
-}
-
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello React
-        </p>
-        
-        <Test title = "Huynh Hao" links = "\media\62397998_2419012068163149_3111132412092874752_n.jpg"></Test>
-      </header>
-    </div>
-  );
 }
 
 export default App;
