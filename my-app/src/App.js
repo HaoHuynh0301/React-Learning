@@ -7,10 +7,10 @@ var Name = "HuynhQuanNhatHao";
 var str = [1, 2, 3, 4, 5];
 var items = str.map((x) => (x*2) + ", ");
 
-function nMap(props) {
+function NMap(props) {
   return(
    <div>
-     <h1>Hello</h1>
+     <h3>{items}</h3>
    </div>
   )
 }
@@ -19,7 +19,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <nMap/>
+        <NMap/>
       </div>
     );
   }
