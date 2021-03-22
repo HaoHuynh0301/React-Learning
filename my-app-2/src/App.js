@@ -5,14 +5,13 @@ import './components/TopMenu'
 import TopMenu from './components/TopMenu.js'
 import Masthead from './components/Masthead.js'
 import PortfolioSection from './components/Portfolio Section.js'
+import ClickAction from './components/ClickAction.js'
 
 class App extends Component {
   render() {
     return (
       <div>
-        <TopMenu/>
-        <Masthead/>
-        <PortfolioSection/>
+        <ClickAction Name = "Hao"/>
       </div>
     );
   }
