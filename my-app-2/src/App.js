@@ -1,29 +1,18 @@
 import logo from './logo.svg';
-import './App.css';
+import './css/styles.css'
 import { Component } from 'react';
-
-function Map() {
-  return (
-    <div>Cach so 1</div>
-  );
-}
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <test/>
-//       </header>
-//     </div>
-//   );
-// }
+import './components/TopMenu'
+import TopMenu from './components/TopMenu.js'
+import Masthead from './components/Masthead.js'
+import PortfolioSection from './components/Portfolio Section.js'
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Map/>
+        <TopMenu/>
+        <Masthead/>
+        <PortfolioSection/>
       </div>
     );
   }
