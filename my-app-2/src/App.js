@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <ClickAction Name = "Hao"/>
+        <ClickAction/>
       </div>
     );
   }
