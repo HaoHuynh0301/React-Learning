@@ -8,39 +8,25 @@ class ClickAction extends Component {
         };
     }
 
-    Click = () => {
-        console.log(this.state.trangthai);
+    Display = () => {
+        if(this.state.trangthai === 0) {
+            return <h1>Hello 0</h1>
+        } else return <h1>Hello 1</h1>
+    }
+
+    SetState = () => {
         if(this.state.trangthai === 1) {
-            setState 
-        } else this.state.trangthai = 1;
+            this.setState({trangthai: 0});
+        } else this.setState({trangthai: 1});
     }
-
-    DisplayButton = () => {
-        if (this.state.trangthai === 0) {
-            return this.Display1();
-        } else {
-            this.Display2();
-        }
-    }
-
-
-    Display1 = () => (
-        <div>
-            <h1>Hello 1</h1>
-        </div>
-    )
-
-    Display2 = () => (
-        <h1>Hello</h1>
-    )
 
     render() {
         return (
             <div>
-
-                {() => this.DisplayButton()}
+               <button onClick={this.SetState}>Click Here</button>
+               <this.Display/>
             </div>
-        );
+        )
     }
 }
 
