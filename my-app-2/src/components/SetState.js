@@ -8,6 +8,8 @@ class SetState extends Component {
         }
     }
 
+    
+
     SetState = () => {
         if(this.state.status === 1) {
             this.setState({ status: 0})

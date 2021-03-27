@@ -6,12 +6,13 @@ import Header from './components/Header.js'
 import Sections from './components/Sections.js'
 import Footer from "./components/Footer.js"
 import SetState from './components/SetState.js'
+import LifeCycle from './components/LifeCycle.js'
 
 class App extends Component {
   render() {
     return (
       <div>
-        <SetState/>
+        <LifeCycle/>
       </div>
     );
   }
