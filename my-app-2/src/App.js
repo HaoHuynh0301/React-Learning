@@ -5,15 +5,13 @@ import TopMenu from './components/TopMenu.js';
 import Header from './components/Header.js'
 import Sections from './components/Sections.js'
 import Footer from "./components/Footer.js"
+import SetState from './components/SetState.js'
 
 class App extends Component {
   render() {
     return (
       <div>
-        <TopMenu/>
-        <Header/>
-        <Sections/>
-        <Footer/>
+        <SetState/>
       </div>
     );
   }
