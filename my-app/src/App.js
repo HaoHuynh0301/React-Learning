@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import React, { Component } from 'react';
 import Nav from './components/Nav.js';
 import Header from './components/Header.js'
-import homeContent from './components/homePage/homeContent.js'
+import Footer from './components/Footer.js'
 import './App.css';
 
 class App extends Component {
@@ -33,6 +33,7 @@ class App extends Component {
       })
     )
   }
+
   render() {
     var blogs = this.state.listBlogs
     return (
@@ -46,7 +47,7 @@ class App extends Component {
               {blogs.map(function(blog, index){
                 return (
                   <div key = {index} class="post-preview">
-                    <a href="#">
+                    <a href="">
                     <h2 className="post-title">
                       {blog.title}
                     </h2>
@@ -65,10 +66,7 @@ class App extends Component {
           </div>
         </div>
         <hr />
-        
-          
-        
-        
+        <Footer />      
       </div>
     );
   }
